@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".NovaVenda" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            
+            <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produtos:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Qtde:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/quantidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+                
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preço:"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/preco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+             <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total do Pedido"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             <TextView
+                 android:id="@+id/total"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:text="R$ - "
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="incluirItem"
+        android:layout_marginTop="10dp"
+        android:text="Adicionar Produto" />
+    
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp" >
+
+    </ListView>
+            
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+    
+
+</LinearLayout>

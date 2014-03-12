@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projeto.mysales"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.projeto.mysales.activitys.MainActivity"
+            android:label="@string/app_name"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.suport.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.projeto.mysales.activitys.ProdutoForm2"
+            android:label="@string/title_activity_cadastro_produto"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.suport.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.projeto.mysales.activitys.Produtos"
+            android:label="@string/title_activity_produtos"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.suport.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.projeto.mysales.activitys.ProdutoForm"
+            android:label="@string/title_activity_editar_produto"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.suport.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.projeto.mysales.activitys.Clientes"
+            android:label="@string/title_activity_clientes"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.suport.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.projeto.mysales.activitys.CadastrarClientes"
+            android:label="@string/title_activity_cadastrar_clientes"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.suport.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.projeto.mysales.activitys.ClienteForm"
+            android:label="@string/title_activity_editar_clientes"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.suport.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.projeto.mysales.activitys.Vendas"
+            android:label="@string/title_activity_vendas"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.suport.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.projeto.mysales.activitys.NovaVenda"
+            android:label="@string/title_activity_nova_venda"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.suport.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.projeto.mysales.VendaDetalhe"
+            android:label="@string/title_activity_venda_detalhe" >
+        </activity>
+        <activity
+            android:name="com.projeto.mysales.activitys.VendaDetalhes"
+            android:label="@string/title_activity_venda_detalhes" >
+        </activity>
+    </application>
+
+</manifest>

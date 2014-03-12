@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_fundo"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ProdutoForm2" >
+
+    <ScrollView
+        android:id="@+id/svCadastroProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Código:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/produtoCodigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textCapCharacters" >
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descrição:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/produtoDescricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="textCapWords" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estoque:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/produtoEstoque"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preço:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/produtoPreco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preço de Venda:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                
+                <EditText
+                    android:id="@+id/produtoPrecoVenda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+        
+    </ScrollView>
+
+</RelativeLayout>

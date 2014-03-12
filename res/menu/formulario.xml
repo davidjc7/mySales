@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item_cancelar"
+        android:title="@string/menu_cancelar"
+        android:icon="@drawable/icon_cancelar"
+        android:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/item_home"
+        android:title="@string/menu_salvar"
+        android:icon="@drawable/icon_home"
+        android:showAsAction="ifRoom" />
+    
+     <item
+        android:id="@+id/item_salvar"
+        android:title="@string/menu_salvar"
+        android:icon="@drawable/icon_salvar"
+        android:showAsAction="ifRoom" />
+
+</menu>
